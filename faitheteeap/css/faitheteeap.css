@@ -1,0 +1,23 @@
+.logo
+{
+	display: inline;
+	padding-top: 0%;
+	width: 15%;
+}
+.resources
+{
+	display: inline;
+	margin-right: 1%;
+	font-size: 20px;
+}
+.site-head-1
+{
+	padding: 1em;
+	background-color: #FFFFFF;
+}
+.site-head-test
+{
+	text-align: center;
+	background-color: #777777;
+	color: #FFFFFF;
+}
