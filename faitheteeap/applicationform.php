@@ -12,7 +12,7 @@
 ?>
 
 
-<html lang="KO-KR">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial scale=1">
@@ -20,15 +20,17 @@
 	<link rel="stylesheet" href="css/faitheteeap.css">
 	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color: #EEEEEE;"> <!--HTML 4.01 part for testing only-->
-	<header role="banner">
-		<div class="site-head-test">
+<body style="background-color: #EEEEEE;">
+	<div class="page-header header-caps" style="margin-top: -0.1%;">
+	<!--	<div class="site-head-test">
 			<?php echo $quote; ?>
-		</div>
-		<div class="site-head-1">
-			<span><img class="logo" src="images/faithlogo.png" alt="FAITH"></img></span><span class="resources"> << Back to Home</span><span class="resources">About ETEEAP</span>
-		</div>
-	</header>
+		</div> -->
+		<a href="home.php"><img class="logo" src="images/faithlogo.png" alt="FAITH"></img></a> 
+		<a href="goals.php">Goals and Objectives</a>
+	</div>
+	<noscript>
+	<div class="alert alert-warning">This site requires Javascript. Please activate it to use the site properly.</div>
+	</noscript>
 	<h2>I. Personal Information</h2><br>
 	<div class="container">
 		<div class="table-responsive">

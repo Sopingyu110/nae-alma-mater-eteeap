@@ -21,3 +21,23 @@
 	background-color: #777777;
 	color: #FFFFFF;
 }
+.jumbo-caps
+{
+	text-align: center;
+	font-family: Delius, Tahoma, Sans Serif;
+}
+.header-caps
+{
+	font-size: 1.1em;
+	padding: 1%;
+	background: #FFFFFF;
+}
+a:link
+{
+	color: black;
+}
+a:hover
+{
+	color: #ffdb4d;
+	text-decoration: none;
+}
