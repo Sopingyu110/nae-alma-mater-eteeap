@@ -1,0 +1,51 @@
+<div id="form-part-5">
+	<!-- ADD JS FOR THIS TO ADD/REMOVE SETS OF FORMS -->
+	<h3>V. Creative Works and Special Accomplishments</h3>
+	<p>In this section, enumerate the various creative works you have accomplished and other special accomplishments.  Examples of these are inventions, published and unpublished literary fiction and non-fiction writings, musical work, products of visual performing arts, exceptional accomplishments in sports, social, cultural and leisure activities, etc. which can lead one to conclude the level of expertise you have obtained on certain fields of interest.  Include also participation in competitions and prizes obtained.</p>
+	<br>
+	<div class="form-group">
+		<fieldset>
+		<legend>Description:</legend>
+		<div class="row">
+			<div class="col-sm-12"><textarea rows=5 cols=40 name="creative-work-description[]"></textarea></div>
+		</div>
+		</fieldset>
+		<br><br>
+		<fieldset>
+		<legend>Date Accomplished:</legend>
+		<div class="row">
+			<div class="col-sm-2">
+				<select class="form-control" id='creative-work-year' name="creative-work-year[]">
+						<option value=''>--Year--</option>
+						<?php for($i=2016; $i>=1940; $i--)
+							echo "<option value='".$i."'>".$i."</option>";
+						?>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<select class="form-control" id='creative-work-month' name="creative-work-month[]">
+					<option value=''>--Month--</option>
+					<?php for($i=0; $i<12; $i++)
+						echo "<option value='".$monthsArray[$i]."'>".$monthsArray[$i]."</option>";
+					?>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<select class="form-control" id='creative-work-day' name="creative-work-day[]">
+					<option value=''>--Day--</option>
+				</select>
+			</div>
+			<div class="col-sm-6"></div>
+		</div>
+		</fieldset>
+		<br><br>
+		<fieldset>
+		<legend>3. Name and Address of Publishing Agency (if written, published work), or an Association/Institution which can attest to the quality of the work.</legend>
+			<label>Name: </label><input type="text" class="form-control" name="creative-work-publishing-agency-name[]" />
+			<label>Address: </label><input type="text" class="form-control" name="creative-work-publishing-agency-address[]" />
+		</fieldset>
+		<br><br>
+		<input type='button' id='add-row-6' value='Add another award' />
+		<input type='button' id='remove-row-6' value='Remove' />
+	</div>
+</div>

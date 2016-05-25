@@ -1,0 +1,139 @@
+<div id="form-part-1">
+	<h3>I. Personal Information</h3>
+	<div class="alert alert-warning">
+	  <strong>Note:</strong> All fields with (<span style="color: red;">*</span>) are required to be filled.
+	</div>
+	<br>
+	<div class="form-group">
+		<label for="name">Name<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-2"><input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" /></div>
+			<div class="col-sm-2"><input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" /></div>
+			<div class="col-sm-2"><input type="text" class="form-control" id="middlename" name="middlename" placeholder="Middle Name" /></div>
+			<div class="col-sm-6"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="address">Address<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-6"><input type="text" class="form-control" id="address" name="address" placeholder="Address" /></div>
+			<div class="col-sm-6"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="zipcode">ZIP Code<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-2"><input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="ZIP Code" /></div>
+			<div class="col-sm-10"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="telno">Telephone No.<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-2"><input type="text" class="form-control" id="telno" name="telno" placeholder="Number" /></div>
+			<div class="col-sm-10"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="birthdate">Birthdate<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-2">
+				<select class="form-control" id='year' name="year">
+						<option value=''>--Year--</option>
+						<?php for($i=2016; $i>=1940; $i--)
+							echo "<option value='".$i."'>".$i."</option>";
+						?>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<select class="form-control" id='month' name="month">
+					<option value=''>--Month--</option>
+					<?php for($i=0; $i<12; $i++)
+						echo "<option value='".$monthsArray[$i]."'>".$monthsArray[$i]."</option>";
+					?>
+				</select>
+			</div>
+			<div class="col-sm-2">
+				<select class="form-control" id='day' name="day">
+					<option value=''>--Day--</option>
+				</select>
+			</div>
+			<div class="col-sm-6"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="birthplace">Birthplace<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-6"><input type="text" class="form-control" id="birthplace" name="birthplace" placeholder="Birthplace" /></div>
+			<div class="col-sm-6"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="civstatus">Civil Status<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-2"><select class="form-control" name="civstatus" id="civstatus"><?php foreach($civilStatusArray as $a) echo "<option value='".$a."'>".$a."</option>"; ?></select></div>
+			<div class="col-sm-10"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="gender">Sex<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-2"><select class="form-control" id="gender" name="gender"><?php foreach($genderArray as $a) echo "<option value='".$a."'>".$a."</option>"; ?></select></div>
+			<div class="col-sm-10"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="nationality">Nationality<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-2"><input type="text" id="user-nationality" name="user-nationality" class="form-control" placeholder="Nationality" /></div>
+			<div class="col-sm-10"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="degree-priorities">Degree/Program being applied for<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-2"><input type="text" id="first-priority-degree" name="first-priority-degree" class="form-control" placeholder="First Priority" /></div>
+			<div class="col-sm-2"><input type="text" id="second-priority-degree" name="second-priority-degree" class="form-control" placeholder="Second Priority" /></div>
+			<div class="col-sm-2"><input type="text" id="third-priority-degree" name="third-priority-degree" class="form-control" placeholder="Third Priority" /></div>
+			<div class="col-sm-6"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="goal-statements">Statement of your goals, objectives, or purposes in applying for the degree.<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-5"><textarea class="form-control" rows="5" id="goal-statements" name="goal-statements" placeholder="Your goals, objectives..."></textarea></div>
+			<div class="col-sm-7"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="devote-time">Indicate how much time you plan to devote for personal learning activities so that you can finish the requirements in the prescribed program. Be specific.
+		<span style="color: red;">*</span> :</label>
+		<div class="row">
+			<div class="col-sm-5"><textarea class="form-control" rows="5" id="devote-time" name="devote-time" placeholder="Tell us..."></textarea></div>
+			<div class="col-sm-7"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="devote-time">For overseas applicants, describe how you plan to obtain accreditation/equivalency. (e.g. when you plan to come to the Philippines)</label>
+		<div class="row">
+			<div class="col-sm-5"><textarea class="form-control" rows="5" id="oversea-applicant-plan" name="oversea-applicant-plan" placeholder="Tell us..."></textarea></div>
+			<div class="col-sm-7"></div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="how-soon-complete-option">How soon do you need to complete equivalency/accreditation?
+		<span style="color: red;">*</span> :</label>
+		<div class="radio">
+			<label class="radio-inline"><input type="radio" id="how-soon-complete-option" name="how-soon-complete-option">Less than one (1) year</label>
+			<label class="radio-inline"><input type="radio" id="how-soon-complete-option" name="how-soon-complete-option">1 year</label>
+		</div>
+		<div class="radio">
+			<label class="radio-inline"><input type="radio" id="how-soon-complete-option" name="how-soon-complete-option">2 years</label>
+			<label class="radio-inline"><input type="radio" id="how-soon-complete-option" name="how-soon-complete-option">3 years</label>
+		</div>
+		<div class="radio">
+			<label class="radio-inline"><input type="radio" id="how-soon-complete-option" name="how-soon-complete-option">4 years</label>
+			<label class="radio-inline"><input type="radio" id="how-soon-complete-option" name="how-soon-complete-option">More than 5 years	</label>
+		</div>
+	</div>
+</div>

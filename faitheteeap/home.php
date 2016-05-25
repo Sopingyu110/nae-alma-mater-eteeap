@@ -22,8 +22,7 @@
 	<!--	<div class="site-head-test">
 			<?php echo $quote; ?>
 		</div> -->
-		<a href="home.php"><img class="logo" src="images/faithlogo.png" alt="FAITH"></img></a> 
-		<a href="goals.php">Goals and Objectives</a>
+		<a href="home.php"><img class="logo" src="images/faithlogo.png" alt="FAITH"></img></a>
 	</div>
 	<noscript>
 	<div class="alert alert-warning">This site requires Javascript. Please activate it to use the site properly.</div>
@@ -45,7 +44,7 @@
 				<p>working for 5 years in the field (related to your desired degree)</p>
 			</div>
 		</div>
-		<a href="applicationform.php" class="btn btn-warning btn-lg">Apply now!</a>
+		<a href="applicationform1.php" class="btn btn-warning btn-lg">Apply now!</a>
 		<div class="row" style="margin-top: 1%;">
 			
 		</div>
